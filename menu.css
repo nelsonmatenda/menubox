@@ -1,0 +1,105 @@
+:root {
+  --some-color: #1c1f26;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background: rgba(17, 26, 35, 0.7);
+  width: 100vw;
+  height: 100vh;
+}
+.menu {
+  display: flex;
+  gap: 1em;
+
+  flex-direction: row;
+  height: 420px;
+  width: 520px;
+  max-height: 420px;
+  max-width: 520px;
+  animation: 0.3s ease 0s 1 normal none running fadeOpacityIn;
+
+  /* /* border-radius: 22px;
+  border: 2px solid rgb(35, 35, 35);
+  box-shadow: rgb(0 0 0 / 50%) 0px 0px 4px; */
+}
+.menu > .card {
+  flex: 1 1 70%;
+}
+.menu > .user {
+  flex: 1 1 30%;
+}
+.card {
+  /* max-height: 400px; */
+  background: #202938;
+  border-radius: 22px;
+  border: 0px solid #ff9345;
+  box-shadow: rgb(0 0 0 / 50%) 0px 0px 4px;
+}
+/* .card .card_head {
+  display: none;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 22px;
+  height: 52px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 52px;
+  text-transform: uppercase;
+  /* background: #171f2b; */
+/* border-bottom: 0px solid;
+  border-top-left-radius: 19px;
+  border-top-right-radius: 19px;
+  letter-spacing: 2px; */
+/* position: relative; */
+/* max-height: 52px;
+  padding: 0px 15px;
+  color: #fff;
+  overflow: hidden; 
+} */
+.card .card_ads {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+.card_ads .img_ads {
+  margin: 15px 0;
+  height: 90%;
+  width: 90%;
+  border-radius: 10px;
+  /* border: 2px solid #ce3df4; */
+  /* box-shadow: rgb(235 152 98 / 100%) 3px 3px 10px; */
+  background-image: url(https://static.upland.me/banners/store2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.card .tool_container {
+  position: relative;
+}
+.card .card_tools {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* margin: 0 auto; */
+  border-radius: 10px;
+  background: #171f2b;
+  width: 90%;
+  height: 90%;
+}
+.user {
+  background: #202938;
+  border-radius: 22px;
+  box-shadow: rgb(0 0 0 / 50%) 0px 0px 4px;
+}
